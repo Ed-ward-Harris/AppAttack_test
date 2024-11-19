@@ -1,6 +1,13 @@
 #!/bin/bash
-# Dynamically determine the directory of the current script
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Dynamically determine the directory of the script
+if [[ -L "$0" ]]; then
+    # If executed via a symlink, resolve to the installation directory
+    SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+else
+    # If running directly, use the source directory
+    SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+fi
 
 # Source other scripts using absolute paths
 source "$SCRIPT_DIR/colours.sh"

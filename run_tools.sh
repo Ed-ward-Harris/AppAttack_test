@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /utilities.sh
+source ./utilities.sh
 # Function to run nmap
 run_nmap(){
     output_file="${output}_nmap"
