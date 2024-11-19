@@ -4,8 +4,6 @@
 
 1. **Clone the Repository**:
    ```bash
-   git clone git@github.com:Ed-ward-Harris/appAttack-test.git
-   or
    git clone https://github.com/Ed-ward-Harris/appAttack-test.git
    cd appAttack-test
    ```
