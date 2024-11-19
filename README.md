@@ -4,7 +4,7 @@
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Ed-ward-Harris/appAttack-test.git
+   git clone https://github.com/Ed-ward-Harris/appAttack_test.git
    cd appAttack_test
    ```
 2. **Run the install script as sudo**:
