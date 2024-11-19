@@ -11,8 +11,8 @@ mkdir -p "$INSTALL_DIR"
 cp -r ./* "$INSTALL_DIR"
 
 # Run the first_run.sh script
-echo "Running first-time setup..."
-(cd "$INSTALL_DIR/toolkit" && ./first_run.sh)
+#echo "Running first-time setup..."
+#(cd "$INSTALL_DIR/toolkit" && ./first_run.sh)
 
 echo "Running first-time setup..."
 chmod +x ./first_run.sh # Ensure the script is executable
